@@ -3,7 +3,7 @@
 .pixel {
     display: flex; 
     justify-content: center;
-    align-content: center;
+    align-content: flex-end;
 	position: relative;
 	width: 300px;
 	height: 120px;

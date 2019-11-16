@@ -3,7 +3,7 @@ import './Navigation.css';
 
 const Navigation = () => {
     return (
-        <nav style={{display: 'Flex', justifyContent: 'flex-end'}}>
+        <nav style={{display: 'Flex', justifyContent: 'flex-end', alignContent: 'flex-end'}}>
             <p className='pixel'> About </p>
             <p className='pixel'> Portfolio </p>
             <p className='pixel'> Contact </p>
