@@ -6,6 +6,7 @@
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-scripts": "3.2.0",
+    "react-tilt": "^0.1.4",
     "tachyons": "^4.11.1"
   },
   "scripts": {
@@ -28,5 +29,17 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itsbenduncan/portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/itsbenduncan/portfolio/issues"
+  },
+  "homepage": "https://github.com/itsbenduncan/portfolio#readme"
 }
