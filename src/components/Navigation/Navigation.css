@@ -1,18 +1,23 @@
 @import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
 
+.navigator{
+	display: flex;
+	align-items: center;
+}
+
 .pixel {
-    display: flex; 
+    display: flex;
+    align-items: center;
     justify-content: center;
-    align-content: flex-end;
 	position: relative;
-	width: 300px;
-	height: 120px;
+	width: 25vw;
+	height: 10vh;
 	color: white;
-	font-size: 30px;
+	font-size: 5vh;
+	font-size: 2vw;
 	text-transform: uppercase;
 	background-color: rgb(43, 106, 116);
 	border: none;
-	/* margin-top: auto; */
 	margin-left: auto;
 	margin-right: auto;
 	border-radius: 24px;
@@ -24,8 +29,8 @@
 .pixel::after {
 	content: "";
 	position: absolute;
-	width: 300px;
-	height: 120px;
+	width: 25vw;
+	height: 10vh;
 	top: 12px;
 	left: 0;
 	background-color: rgb(20, 50, 54);
