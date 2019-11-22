@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
+.Title {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    font-size: 15vw;
+    color: rgba(255, 255, 255, 0.15);
+    font-family: 'Press Start 2P', cursive;
+    font-weight: 700;
+}
+
+.About{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 3vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    height: 55vh;
+    width: 80vw;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 1.2em;
+    text-align: left;
+    text-indent: 25px;
+}
