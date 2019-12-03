@@ -1,9 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
 
-.navigator{
-	display: flex;
-	align-items: center;
-	padding-top: 10px;
+
+@media (max-width:1000px){
+	.navigator {
+		display: flex;
+		align-items: center;
+	}
+}
+
+@media (min-width:1100px){
+	.navigator{
+		display: flex;
+		align-items: center;
+		padding-top: 10px;
+	}
 }
 
 .pixel {
