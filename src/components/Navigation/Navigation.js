@@ -1,12 +1,12 @@
 import React from 'react';
 import './Navigation.css';
 
-const Navigation = () => {
+const Navigation = ({ onRouteChange }) => {
     return (
         <nav className='navigator'>
-            <p className='pixel'> About </p>
-            <p className='pixel'> Portfolio </p>
-            <p className='pixel'> Contact </p>
+            <button className='pixel' onClick={() => onRouteChange('About')} > About </button>
+            <button className='pixel' onClick={() => onRouteChange('Portfolio')} > Portfolio </button>
+            <button className='pixel' onClick={() => onRouteChange('Contact')} > Contact </button>
         </nav>
     )
 }

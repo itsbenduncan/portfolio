@@ -1,11 +1,11 @@
 import React from 'react';
 import './About.css';
 
-const Test = () => {
+const About = () => {
     return (
         <div>
             <div className='Title'>
-                    about
+                about
             </div>
             <div className='About'>
                 <div>
@@ -18,4 +18,4 @@ const Test = () => {
     )
 }
 
-export default Test;
+export default About;

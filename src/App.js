@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Particles from 'react-particles-js';
 import Navigation from './components/Navigation/Navigation';
 import Logo from './components/Logo/Logo';
 import About from './components/About/About';
+import Portfolio from './components/Portfolio/Portfolio';
+import Contact from './components/Contact/Contact';
 import './App.css';
 
 const particleOptions = {
@@ -25,23 +27,43 @@ const particleOptions = {
   }
 }
 
-function App() {
-  return (
-    <div className="App">
-      <Particles 
-        className='Particles'
-        params={particleOptions}
-      />
-      <Logo />
-      <About />
-      <Navigation />
-      {/*
-      <Head />
-      <ModeSwitch />
-      <ContactForm />
-      */}
-    </div>
-  );
+class App extends Component {
+  constructor () {
+    super();
+    this.state = {
+      input: '',
+      route: 'About',
+    }
+  }
+
+  onRouteChange = (route) => {
+    this.setState({route: route});
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <Particles 
+          className='Particles'
+          params={particleOptions}
+        />
+        <Logo />
+        { this.state.route === 'Portfolio'
+          ? <Portfolio onRouteChange={this.onRouteChange} />
+          :  this.state.route === 'Contact'
+          ? <Contact onRouteChange={this.onRouteChange} />
+          : ( this.state.route === 'About'
+            ? <About onRouteChange={this.onRouteChange} />
+            : <div>
+            </div>
+          )
+        }
+        <Navigation 
+          onRouteChange={this.onRouteChange} 
+        />
+      </div>
+    );
+  }
 }
 
 export default App;

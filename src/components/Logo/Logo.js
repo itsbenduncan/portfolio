@@ -8,10 +8,10 @@ const Logo = () => {
     return (
         <div className='Logo'>
             <Tilt className="Tilt br2 shadow-2" options={{ max: 25, scale: 1.05, }} style={{ height: 150, width: 150 }} >
-                <div className="Tilt-inner">
+                <div className="Tilt-inner" >
                     <img style={{paddingTop: '5px'}} alt='logo' src={logo} />
                     <Typing>
-                        <h1> itsbenduncan </h1>
+                        <h1>itsbenduncan</h1>
                     </Typing>
                 </div>
             </Tilt>
