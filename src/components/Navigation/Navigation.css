@@ -59,4 +59,5 @@
 }
 .pixel:active::after {
 	top: 2px;
+	background-color: rgb(43, 106, 116);
 }

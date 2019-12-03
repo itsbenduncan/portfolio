@@ -3,10 +3,12 @@
 
 .cTitle {
     display: flex;
+    position: absolute;
     width: 100%;
     justify-content: center;
     align-items: center;
     position: fixed;
+    z-index: -1;
     font-size: 12vw;
     color: rgba(255, 255, 255, 0.15);
     font-family: 'Press Start 2P', cursive;
@@ -14,42 +16,77 @@
     cursor: default;
 }
 
-@media (max-width:1000px){
-    .contact{
-        display: flex;
-        justify-content: flex-start;
-        overflow: scroll;
-        margin-top: 3vw;
-        margin-left: 10vw;
-        margin-right: 10vw;
-        height: 45vh;
-        width: 80vw;
-        color: white;
-        font-family: 'Raleway', sans-serif;
-        font-weight: 800;
-        font-size: 1.2em;
-        text-align: left;
-        text-indent: 25px;
-        cursor: default;
-    }
+.contact-form{
+    display: flex;
+    justify-content: center;
+    margin-top: 3vw;
+    margin-left: auto;
+    margin-right: auto;
+    height: 55vh;
+    width: 50vw;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 1.2em;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-color: transparent;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+    border-radius: 5px;
+    /* text-indent: 25px; */
+    /* cursor: default; */
 }
 
-@media (max-width:1100px){
-    .contact{
-        display: flex;
-        justify-content: flex-start;
-        overflow: scroll;
-        margin-top: 3vw;
-        margin-left: 10vw;
-        margin-right: 10vw;
-        height: 55vh;
-        width: 80vw;
-        color: white;
-        font-family: 'Raleway', sans-serif;
-        font-weight: 800;
-        font-size: 1.2em;
-        text-align: left;
-        text-indent: 25px;
-        cursor: default;
-    }
+.contacting {
+    display: flex;
+    justify-content: center;
+    border-color: transparent;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5px;
+    /* align-content: center; */
+    width: 48vw;
+    color: white;
+}
+
+.name {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 3px 3px 0px 0px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .25);
+    border-color: transparent;
+    border-bottom-color: rgba(255, 255, 255, 0.65);
+    color: white;
+}
+
+.email {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 3px 3px 0px 0px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .25);
+    border-color: transparent;
+    border-bottom-color: rgba(255, 255, 255, 0.65);
+    color: white;
+}
+
+.subject {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 3px 3px 0px 0px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .25);
+    border-color: transparent;
+    border-bottom-color: rgba(255, 255, 255, 0.65);
+    color: white;
+}
+
+.message {
+    height: 25%;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 3px 3px 0px 0px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .25);
+    border-color: transparent;
+    border-bottom-color: rgba(255, 255, 255, 0.65);
+    color: white;
+    resize: vertical;
+    overflow: auto;
 }

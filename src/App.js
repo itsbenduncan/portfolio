@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Particles from 'react-particles-js';
 import Navigation from './components/Navigation/Navigation';
 import Logo from './components/Logo/Logo';
+import Social from './components/Social/Social';
 import About from './components/About/About';
 import Portfolio from './components/Portfolio/Portfolio';
 import Contact from './components/Contact/Contact';
@@ -47,6 +48,7 @@ class App extends Component {
           className='Particles'
           params={particleOptions}
         />
+        <Social />
         <Logo />
         { this.state.route === 'Portfolio'
           ? <Portfolio onRouteChange={this.onRouteChange} />

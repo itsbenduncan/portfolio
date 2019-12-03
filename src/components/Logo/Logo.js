@@ -3,6 +3,7 @@ import Tilt from 'react-tilt';
 import './Logo.css';
 import logo from './logo.png';
 import Typing from 'react-typing-animation';
+import instagram from './instagram.png';
 
 const Logo = () => {
     return (
@@ -15,6 +16,7 @@ const Logo = () => {
                     </Typing>
                 </div>
             </Tilt>
+            <img className="badge" alt='instagram' src={instagram} />
         </div>
     )
 }
