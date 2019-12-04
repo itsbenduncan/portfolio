@@ -1,76 +1,168 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
 
-
-@media (max-width:1000px){
-   .Logo1 {
-      /* display: flex; */
-      flex-wrap: wrap;
-      justify-content: space-evenly;
-      align-content: center;
-      width: 90vw;
-      height: 20vh;
-      margin-left: auto;
-      margin-right: auto;
-   }
+.navigator {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  background-color: transparent;
+  width: 90vw;
+  height: 30vh;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-@media (min-width:1000px){
-   .Logo1 {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-evenly;
-      align-content: center;
-      width: 90vw;
-      height: 20vh;
-      margin-left: auto;
-      margin-right: auto;
-   }
+.logo-elements {
+   display: flex;
+   flex-flow: column wrap;
+   justify-content: start;
+   align-self: center;
+   justify-self: start;
+   background-color: transparent;
+   height: 100%;
+   width: 500px;
 }
 
 .tilt2 {
    display: flex;
    align-content: center;
-   align-self: center;
-   margin-right: auto;
-   height: 10vh;
-   width: 100vh;
+   justify-content: center;
+   /* align-items: center; */
+   height: 150px;
+   width: 150px;
 }
 
-.type-text{
+.logo {
+   align-self: center;
+   height: 20vh;
+   width: 20vh;
+}
+
+.name {
+   position: absolute;
+   justify-self: start;
+   margin-top: 5vh;
    color: white;
-   font-family: 'Raleway', sans-serif; letter-spacing: 3px;
-   font-weight: 300;
-   font-size: 5vw;
-}
-
-.inner2 {
-   align-self: center;
-   justify-self: end;
+   font-size: 5vh;
    height: 5vh;
-   width: 5vh;
+   width: 10vh;
 }
 
-.inner3 {
-   font-family: 'Raleway', sans-serif; letter-spacing: 3px;
-   color: white;
-   font-weight: 300;
-   font-size: 5vw;
-}
-
-.inner-text {
-   margin-top: 7.5vh;
-   align-self: center;
-   font-family: 'Raleway', sans-serif; letter-spacing: 3px;
-   color: white;
-   font-weight: 300;
-   font-size: 2.5em;
-}
-
-.social-icons {
+.social-wrap {
    display: flex;
    justify-content: space-evenly;
-   align-content: center;
+   width: 250px;
+   margin-right: auto;
+   align-self: center;
+}
+
+.social-pixel {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+   width: 6vh;
+   height: 6vh;
+   color: white;
+   text-transform: uppercase;
+   background-color: rgb(80, 80, 80);
+   border: none;
+   margin-left: auto;
+   margin-right: auto;
+   border-radius: 10px;
+   box-sizing: border-box;
+   cursor: pointer;
+   font-family: 'Press Start 2P', cursive;
+   outline: none;
+}
+.social-pixel::after {
+  content: "";
+  position: absolute;
+  width: 6vh;
+  height: 6vh;
+  top: 10px;
+  left: 0;
+  background-color: rgb(40, 40, 40);
+  border-radius: 10px;
+  z-index: -1;
+}
+.social-pixel:hover {
+   background-color: rgb(70, 70, 70);
+   color: rgb(215, 215, 215);
+   cursor: grab;
+}
+.social-pixel:active {
+  top: 5px;
+  cursor: grabbing;
+}
+.social-pixel:active::after {
+  top: 2px;
+  background-color: rgb(80, 80, 80);
+}
+
+.social-icon {
    align-self: center;
    justify-self: end;
-   width: 25vw;
+   height: 4vh;
+   width: 4vh;
+}
+
+.nav-buttons {
+   display: flex;
+   justify-self: end;
+   width: 50vw;
+ }
+
+ .button-container {
+   display: flex;
+   justify-content: space-evenly;
+   width: 50vw;
+   align-self: center;
+ }
+
+ .pixel {
+   display: block;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+   width: auto;
+   height: 4vw;
+   color: white;
+   /* font-size: 5vh; */
+   font-size: 1.5em;
+   text-transform: uppercase;
+   background-color: rgb(43, 106, 116);
+   border: none;
+   margin-left: auto;
+   margin-right: auto;
+   border-radius: 15px;
+   box-sizing: border-box;
+   cursor: pointer;
+   font-family: 'Press Start 2P', cursive;
+   outline: none;
+}
+.pixel::after {
+   content: "";
+   font-color: transparent;
+   position: absolute;
+   width: 100%;
+   height: 4vw;
+   top: 12px;
+   left: 0;
+   background-color: rgb(20, 50, 54);
+   border-radius: 15px;
+   z-index: -1;
+}
+.pixel:hover {
+  background-color: rgb(29, 72, 78);
+  color: rgb(215, 215, 215);
+  cursor: grab;
+}
+.pixel:active {
+  top: 10px;
+  cursor: grabbing;
+}
+.pixel:active::after {
+  top: 2px;
+  background-color: rgb(43, 106, 116);
 }

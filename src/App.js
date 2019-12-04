@@ -49,7 +49,9 @@ class App extends Component {
           params={particleOptions}
         />
         <Social />
-        <Logo />
+        <Logo 
+          onRouteChange={this.onRouteChange}
+        />
         { this.state.route === 'Portfolio'
           ? <Portfolio onRouteChange={this.onRouteChange} />
           :  this.state.route === 'Contact'
