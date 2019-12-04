@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 
 body, html {
+  display: flex;
   position: fixed;
   width: 100%;
   height: 100%;
