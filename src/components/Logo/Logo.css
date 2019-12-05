@@ -15,9 +15,9 @@
 .logo-elements {
    display: flex;
    flex-flow: column wrap;
-   justify-content: start;
+   justify-content: flex-start;
    align-self: center;
-   justify-self: start;
+   justify-self: flex-start;
    background-color: transparent;
    height: 100%;
    width: 500px;
@@ -40,7 +40,7 @@
 
 .name {
    position: absolute;
-   justify-self: start;
+   justify-self: flex-start;
    margin-top: 5vh;
    color: white;
    font-size: 5vh;

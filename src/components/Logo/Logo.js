@@ -19,15 +19,21 @@ const Logo = ({ onRouteChange }) => {
                         </Typing>
                     </Tilt>
                     <div className='social-wrap'>
-                        <div className='social-pixel'>
-                            <img className='social-icon' alt='github' src={github} />
-                        </div>
-                        <div className='social-pixel'>
-                            <img className='social-icon' alt='instagram' src={instagram} />
-                        </div>
-                        <div className='social-pixel'>
-                            <img className='social-icon' alt='twitter' src={twitter} />
-                        </div>
+                        <a href="https://github.com/itsbenduncan" target={"_blank"}>
+                            <div className='social-pixel'>
+                                <img className='social-icon' alt='github' src={github} />
+                            </div>
+                        </a>
+                        <a href="https://instagram.com/itsbenduncan" target={"_blank"}>
+                            <div className='social-pixel'>
+                                <img className='social-icon' alt='instagram' src={instagram} />
+                            </div>
+                        </a>
+                        <a href="https://twitter.com/itsbenduncan" target={"_blank"}>
+                            <div className='social-pixel'>
+                                <img className='social-icon' alt='twitter' src={twitter} />
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <div class="nav-buttons">
