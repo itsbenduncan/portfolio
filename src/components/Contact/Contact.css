@@ -16,6 +16,13 @@
     cursor: default;
 }
 
+.contact-info{
+    color: white;
+    font-size: 5vw;
+    font-family: 'Raleway', sans-serif;
+    font-align: left;
+}
+
 .contact-form{
     display: flex;
     justify-content: center;

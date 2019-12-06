@@ -2,14 +2,16 @@
 @import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
 
 .navigator {
-  display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-  background-color: transparent;
-  width: 90vw;
-  height: 30vh;
-  margin-left: auto;
-  margin-right: auto;
+   grid-area: header;
+   display: flex;
+   flex-wrap: wrap;
+   align-content: center;
+   background-color: transparent;
+   width: 90vw;
+   height: 30vh;
+   margin-left: auto;
+   margin-right: auto;
+   position: sticky;
 }
 
 .logo-elements {
@@ -38,14 +40,30 @@
    width: 20vh;
 }
 
-.name {
-   position: absolute;
-   justify-self: flex-start;
-   margin-top: 5vh;
-   color: white;
-   font-size: 5vh;
-   height: 5vh;
-   width: 10vh;
+@media (max-width:1100px){
+   .name {
+      position: absolute;
+      justify-self: flex-start;
+      margin-top: 7vh;
+      color: white;
+      font-size: 3vh;
+      text-align: left;
+      height: 5vh;
+      width: 10vh;
+   }
+}
+
+@media (min-width:1100px){
+   .name {
+      position: absolute;
+      justify-self: flex-start;
+      margin-top: 5vh;
+      color: white;
+      font-size: 5vh;
+      text-align: left;
+      height: 5vh;
+      width: 10vh;
+   }
 }
 
 .social-wrap {
@@ -107,62 +125,129 @@
    width: 4vh;
 }
 
-.nav-buttons {
-   display: flex;
-   justify-self: end;
-   width: 50vw;
- }
 
- .button-container {
-   display: flex;
-   justify-content: space-evenly;
-   width: 50vw;
-   align-self: center;
- }
+@media (max-width:1100px){
+   .nav-buttons {
+      display: flex;
+      justify-self: end;
+      justify-content: center;
+      width: auto;
+   }
 
- .pixel {
-   display: block;
-   align-items: center;
-   justify-content: center;
-   position: relative;
-   width: auto;
-   height: 4vw;
-   color: white;
-   /* font-size: 5vh; */
-   font-size: 1.5em;
-   text-transform: uppercase;
+   .button-container {
+      display: flex;
+      justify-content: space-evenly;
+      justify-self: center;
+      width: 50vw;
+      align-self: center;
+   }
+
+   .pixel {
+      display: block;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      width: auto;
+      height: 4vw;
+      color: white;
+      /* font-size: 5vh; */
+      font-size: .75em;
+      text-transform: uppercase;
+      background-color: rgb(43, 106, 116);
+      border: none;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 15px;
+      box-sizing: border-box;
+      cursor: pointer;
+      font-family: 'Press Start 2P', cursive;
+      outline: none;
+   }
+   .pixel::after {
+      content: "";
+      font-color: transparent;
+      position: absolute;
+      width: 100%;
+      height: 4vw;
+      top: 6px;
+      left: 0;
+      background-color: rgb(20, 50, 54);
+      border-radius: 15px;
+      z-index: -1;
+   }
+   .pixel:hover {
+   background-color: rgb(29, 72, 78);
+   color: rgb(215, 215, 215);
+   cursor: grab;
+   }
+   .pixel:active {
+   top: 10px;
+   cursor: grabbing;
+   }
+   .pixel:active::after {
+   top: 2px;
    background-color: rgb(43, 106, 116);
-   border: none;
-   margin-left: auto;
-   margin-right: auto;
-   border-radius: 15px;
-   box-sizing: border-box;
-   cursor: pointer;
-   font-family: 'Press Start 2P', cursive;
-   outline: none;
+   }
 }
-.pixel::after {
-   content: "";
-   font-color: transparent;
-   position: absolute;
-   width: 100%;
-   height: 4vw;
-   top: 12px;
-   left: 0;
-   background-color: rgb(20, 50, 54);
-   border-radius: 15px;
-   z-index: -1;
-}
-.pixel:hover {
-  background-color: rgb(29, 72, 78);
-  color: rgb(215, 215, 215);
-  cursor: grab;
-}
-.pixel:active {
-  top: 10px;
-  cursor: grabbing;
-}
-.pixel:active::after {
-  top: 2px;
-  background-color: rgb(43, 106, 116);
+
+@media (min-width:1100px){
+   .nav-buttons {
+      display: flex;
+      justify-self: end;
+      width: 50vw;
+   }
+
+   .button-container {
+      display: flex;
+      justify-content: space-evenly;
+      width: 50vw;
+      align-self: center;
+   }
+
+   .pixel {
+      display: block;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      width: auto;
+      height: 4vw;
+      color: white;
+      /* font-size: 5vh; */
+      font-size: 1.5em;
+      text-transform: uppercase;
+      background-color: rgb(43, 106, 116);
+      border: none;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 15px;
+      box-sizing: border-box;
+      cursor: pointer;
+      font-family: 'Press Start 2P', cursive;
+      outline: none;
+   }
+   .pixel::after {
+      content: "";
+      font-color: transparent;
+      position: absolute;
+      width: 100%;
+      height: 4vw;
+      top: 12px;
+      left: 0;
+      background-color: rgb(20, 50, 54);
+      border-radius: 15px;
+      z-index: -1;
+   }
+   .pixel:hover {
+   background-color: rgb(29, 72, 78);
+   color: rgb(215, 215, 215);
+   cursor: grab;
+   }
+   .pixel:active {
+   top: 10px;
+   cursor: grabbing;
+   }
+   .pixel:active::after {
+   top: 2px;
+   background-color: rgb(43, 106, 116);
+   }
 }

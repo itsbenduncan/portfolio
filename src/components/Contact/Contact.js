@@ -7,7 +7,7 @@ const Contact = () => {
             <div className='cTitle'>
                 contact
             </div>
-            <div className="contact-form">
+            {/* <div className="contact-form">
                 <fieldset className="contacting">
                     <div class="input-group">
                         <label htmlFor="name">Name</label>
@@ -26,6 +26,11 @@ const Contact = () => {
                         <input type="text" className="message" placeholder="I would love for you to do some work for us..." />
                     </div>
                 </fieldset>
+            </div> */}
+            <div className="contact-info">
+                I would love to hear from you! <br /><br />
+                email: itsbenduncan@gmail.com <br />
+                phone: (808)-384-1245
             </div>
         </div>
     )
