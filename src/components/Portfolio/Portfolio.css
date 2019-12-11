@@ -20,10 +20,17 @@
     grid-template-columns: 100vw;
     grid-template-rows: auto auto auto auto;
     grid-gap: 30px;
-    overflow-y: scroll;
     height: auto;
     color: white;
     margin-top: 25px;
+}
+
+.scroller {
+    overflow: scroll;
+}
+
+a:link, a:visited {
+    text-decoration: none;
 }
 
 .portfolio-container {

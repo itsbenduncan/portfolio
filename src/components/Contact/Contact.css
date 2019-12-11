@@ -17,83 +17,16 @@
 }
 
 .contact-info{
+    margin-top: 5vh;
     color: white;
-    font-size: 5vw;
     font-family: 'Raleway', sans-serif;
     font-align: left;
 }
 
-.contact-form{
-    display: flex;
-    justify-content: center;
-    margin-top: 3vw;
-    margin-left: auto;
-    margin-right: auto;
-    height: 55vh;
-    width: 50vw;
-    color: white;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 800;
-    font-size: 1.2em;
-    text-align: left;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-color: transparent;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
-    border-radius: 5px;
-    /* text-indent: 25px; */
-    /* cursor: default; */
+.contact-message{
+    font-size: 4vw;
 }
 
-.contacting {
-    display: flex;
-    justify-content: center;
-    border-color: transparent;
-}
-
-.input-group {
-    display: flex;
-    flex-direction: column;
-    padding-top: 5px;
-    /* align-content: center; */
-    width: 48vw;
-    color: white;
-}
-
-.name {
-    background-color: rgba(0, 0, 0, 0.1);
-    border-radius: 3px 3px 0px 0px;
-    box-shadow: 0 0 4px rgba(0, 0, 0, .25);
-    border-color: transparent;
-    border-bottom-color: rgba(255, 255, 255, 0.65);
-    color: white;
-}
-
-.email {
-    background-color: rgba(0, 0, 0, 0.1);
-    border-radius: 3px 3px 0px 0px;
-    box-shadow: 0 0 4px rgba(0, 0, 0, .25);
-    border-color: transparent;
-    border-bottom-color: rgba(255, 255, 255, 0.65);
-    color: white;
-}
-
-.subject {
-    background-color: rgba(0, 0, 0, 0.1);
-    border-radius: 3px 3px 0px 0px;
-    box-shadow: 0 0 4px rgba(0, 0, 0, .25);
-    border-color: transparent;
-    border-bottom-color: rgba(255, 255, 255, 0.65);
-    color: white;
-}
-
-.message {
-    height: 25%;
-    background-color: rgba(0, 0, 0, 0.1);
-    border-radius: 3px 3px 0px 0px;
-    box-shadow: 0 0 4px rgba(0, 0, 0, .25);
-    border-color: transparent;
-    border-bottom-color: rgba(255, 255, 255, 0.65);
-    color: white;
-    resize: vertical;
-    overflow: auto;
+.contact-details{
+    font-size: 3vw;
 }
